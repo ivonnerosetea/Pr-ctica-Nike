@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Nike</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+ <body>
+  <header>
+        <nav class="navbar">
+            <!-- Contenedor para el logo -->
+            <div class="logo-container">
+                <img src="moda.png" alt="Logo" class="logo">
+            </div>
+    
+            <!-- Contenedor para la lista de enlaces -->
+            <div class="nav-links-container">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#">Lo Nuevo</a></li>
+                    <li><a href="#">Hombre</a></li>
+                    <li><a href="#">Mujer</a></li>
+                    <li><a href="#">Niño/a</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">SNKRS</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contenedor para búsqueda y carrito -->
+            <div class="right-container">
+                <!-- Campo de búsqueda -->
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar..." class="search-input">
+                    <!-- <span class="search-icon">🔍</span>  -->
+                    <button class="search-icon"><i class="fas fa-magnifying-glass"></i></button>
+
+                </div>
+    
+
+                 <!-- Botón de carrito -->
+            <div class="cart-container">
+                <button class="heart"><i class="fa-regular fa-heart"></i></button>
+                <button class="cart-button" id="cart-button"><i class="fas fa-light fa-bag-shopping"></i></button>
+                <!-- Contenedor del carrito -->
+                
+                <div id="cart-details" class="cart-details hidden">
+                    <h3>Carrito de Compras</h3>
+                    <div id="cart-items">
+                        <p>No hay productos en el carrito.</p>
+                    </div>
+                </div>                
+              </div>
+            </div>
+        </nav>        
+    </header>
+
+    <!-- Sección de productos -->
+    <div class="lanza">
+    <h2>Nuevos lanzamientos (301)</h2>
+    <div>
+        <p>Ordenar por </p>
+    </div>
+    </div>
+
+    <section class="products">
+        <div class="product" data-id="1" data-name="Nike Air Max 97 Futura" data-price="3,099">
+            <img src="img/a.jpeg" alt="Producto 1" class="product-image">
+            <p style="color: rgb(171, 6, 6);">Último modelo</p>
+            <h3>Nike Air Max 97 Futura</h3>
+            <p style="color: rgb(82, 82, 82);">Calzado para mujer</p>
+            <p>$3,149</p>
+            <p style="color: rgb(0, 128, 13);">¡Oferta Flash 70% extra!</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product" data-id="2" data-name="Nike Air Force 1'07 Premium" data-price="3,099">
+            <img src="img/b.jpeg" alt="Producto 2" class="product-image">
+            <p style="color: rgb(171, 6, 6);">Lo mas vendido</p>
+            <h3>Nike Air Force 1'07 Premium</h3>
+            <p style="color: rgb(82, 82, 82);">Calzado para mujer</p>
+            <p>$3,099</p>
+            <p style="color: rgb(0, 128, 13);">¡Oferta Flash 10% extra!</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product" data-id="3" data-name="Nike Cortez Leather" data-price="1,679">
+            <img src="img/c.jpeg" alt="Producto 3" class="product-image">
+            <p style="color: rgb(171, 6, 6);">Tendencia</p>
+            <h3>Nike Cortez Leather</h3>
+            <p style="color: rgb(82, 82, 82);">Calzado para mujer</p>
+            <p>$1,679</p>
+            <p style="color: rgb(0, 128, 13);">¡Oferta Flash 10% extra!</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product" data-id="4" data-name="Nike Air Max Dn Premium" data-price="3,999">
+            <img src="img/d.jpeg" alt="Producto 3" class="product-image">
+            <p style="color: rgb(171, 6, 6);">Materiales sustentables</p>
+            <h3>Nike Air Max Dn Premium</h3>
+            <p style="color: rgb(82, 82, 82);">Calzado para mujer</p>
+            <p>$3,999</p>
+            <p style="color: rgb(0, 128, 13);">¡Oferta Flash 30% extra!</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product" data-id="5" data-name="Nike Free Metcon 6" data-price="2,899">
+            <img src="img/e.jpeg" alt="Producto 3" class="product-image">
+            <p style="color: rgb(171, 6, 6);">Lo mas vendido</p>
+            <h3>Nike Free Metcon 6</h3>
+            <p style="color: rgb(82, 82, 82);">Tenis de entrenamiento para mujer</p>
+            <p>$2,899</p>
+            <p style="color: rgb(0, 128, 13);">¡Oferta Flash!</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product" data-id="6" data-name="Nike Zoom Vomero" data-price="3,599">
+            <img src="img/f.jpeg" alt="Producto 3" class="product-image">
+            <p style="color: rgb(171, 6, 6);">Último modelo</p>
+            <h3>Nike Zoom Vomero</h3>
+            <p style="color: rgb(82, 82, 82);">Calzado para mujer</p>
+            <p>$3,599</p>
+            <p style="color: rgb(0, 128, 13);">¡Oferta Flash 25% extra!</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product" data-id="7" data-name="Nike Air Force 1 Shadow" data-price="3,099">
+            <img src="img/g.jpeg" alt="Producto 3" class="product-image">
+            <p style="color: rgb(171, 6, 6);">Lo mas vendido</p>
+            <h3>Nike Air Force 1 Shadow</h3>
+            <p style="color: rgb(82, 82, 82);">Calzado mixto</p>
+            <p>$3,099</p>
+            <p style="color: rgb(0, 128, 13);">¡Próxima oferta!</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product" data-id="8" data-name="Nike Calm" data-price="1,399">
+            <img src="img/j.jpeg" alt="Producto 3" class="product-image">
+            <p style="color: rgb(171, 6, 6);">Materiales sustentables</p>
+            <h3>Nike Calm</h3>
+            <p style="color: rgb(82, 82, 82);">Sandalias para mujer</p>
+            <p>$1,399</p>
+            <p style="color: rgb(0, 128, 13);">¡Oferta Flash 30% extra!</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <!-- Añadir más productos si es necesario -->
+    </section>
+    
+    
+
+  <script src="script.js"></script>
+ </body>
+</html>
